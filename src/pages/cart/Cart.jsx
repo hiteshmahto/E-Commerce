@@ -72,8 +72,8 @@ function Cart() {
     console.log(addressInfo);
 
     var options = {
-      key: "rzp_test_GcZZFDPP0jHtC4",
-      key_secret: "6JdtQv2u7oUw7EWziYeyoew",
+      key: import.meta.env.VITE_RAZORPAY_KEY,
+      key_secret: import.meta.env.VITE_RAZORPAY_SECRET,
       amount: parseInt(grandTotal * 100),
       currency: "INR",
       order_receipt: "order_rcptid_" + name,
